@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">چاول کی بیماری کا پتہ لگانا</string>
+    <string name="app_name">چاول کی بیماری کا پتہ لگانا</string>
+    <string name="title_check_disease">بیماری کی جانچ کریں</string>
+    <string name="title_history">تاریخ</string>
+    <string name="title_common_diseases">عام بیماریوں</string>
+    <string name="title_user_manual">صارف دستی</string>
+    <string name="title_settings">ترتیبات</string>
+
+    <string name="btn_english">انگریزی</string>
+    <string name="btn_urdu">اردو</string>
+
+    <string name="title_choose_languge">زبان کا انتخاب کریں۔</string>
+</resources>

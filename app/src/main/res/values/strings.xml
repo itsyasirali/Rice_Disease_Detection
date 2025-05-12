@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">Rice Disease Detection</string>
+    <string name="name" translatable="false">Rice Disease Detection</string>
+
+    <string name="title_check_disease" translatable="false">Check Disease</string>
+    <string name="title_history" translatable="false">History</string>
+    <string name="title_common_diseases" translatable="false">Common Diseases</string>
+    <string name="title_user_manual" translatable="false">User Manual</string>
+    <string name="title_settings" translatable="false">Settings</string>
+
+    <string name="btn_english" translatable="false">English</string>
+    <string name="btn_urdu" translatable="false">Urdu</string>
+
+    <string name="title_choose_languge" translatable="false">Choose Language</string>
+</resources>
