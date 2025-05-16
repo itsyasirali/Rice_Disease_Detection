@@ -1,4 +1,4 @@
-package com.yasiraliraj.ricediseasedetection
+package com.itsyasirali.ricediseasedetection
 
 import org.junit.Test
 

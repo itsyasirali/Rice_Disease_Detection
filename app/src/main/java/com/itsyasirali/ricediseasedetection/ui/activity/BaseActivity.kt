@@ -1,8 +1,8 @@
-package com.yasiraliraj.ricediseasedetection.ui.activity
+package com.itsyasirali.ricediseasedetection.ui.activity
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
-import com.yasiraliraj.ricediseasedetection.util.LocaleHelper
+import com.itsyasirali.ricediseasedetection.util.LocaleHelper
 
 open class BaseActivity : AppCompatActivity() {
     override fun attachBaseContext(newBase: Context) {

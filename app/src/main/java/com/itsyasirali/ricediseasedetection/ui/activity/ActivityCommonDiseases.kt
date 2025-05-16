@@ -1,10 +1,10 @@
-package com.yasiraliraj.ricediseasedetection.ui.activity
+package com.itsyasirali.ricediseasedetection.ui.activity
 
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.yasiraliraj.ricediseasedetection.adapter.DiseaseAdapter
-import com.yasiraliraj.ricediseasedetection.databinding.ActivityCommonDiseasesBinding
-import com.yasiraliraj.ricediseasedetection.models.DiseaseModel
+import com.itsyasirali.ricediseasedetection.adapter.DiseaseAdapter
+import com.itsyasirali.ricediseasedetection.databinding.ActivityCommonDiseasesBinding
+import com.itsyasirali.ricediseasedetection.models.DiseaseModel
 
 class ActivityCommonDiseases : BaseActivity() {
 

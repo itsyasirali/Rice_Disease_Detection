@@ -1,4 +1,4 @@
-package com.yasiraliraj.ricediseasedetection.models
+package com.itsyasirali.ricediseasedetection.models
 
 data class DiseaseModel(
     val name: String,

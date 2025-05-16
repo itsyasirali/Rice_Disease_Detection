@@ -1,4 +1,4 @@
-package com.yasiraliraj.ricediseasedetection
+package com.itsyasirali.ricediseasedetection
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

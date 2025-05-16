@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.yasiraliraj.ricediseasedetection"
+    namespace = "com.itsyasirali.ricediseasedetection"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.yasiraliraj.ricediseasedetection"
+        applicationId = "com.itsyasirali.ricediseasedetection"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.yasiraliraj.ricediseasedetection.ui.activity
+package com.itsyasirali.ricediseasedetection.ui.activity
 
 import android.app.Activity
 import android.content.Intent
@@ -11,8 +11,8 @@ import android.provider.MediaStore
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import com.yasiraliraj.ricediseasedetection.R
-import com.yasiraliraj.ricediseasedetection.util.ImageClassifier
+import com.itsyasirali.ricediseasedetection.R
+import com.itsyasirali.ricediseasedetection.util.ImageClassifier
 
 class ActivityCheckRice : BaseActivity() {
     private lateinit var imageClassifier: ImageClassifier

@@ -1,4 +1,4 @@
-package com.yasiraliraj.ricediseasedetection.util
+package com.itsyasirali.ricediseasedetection.util
 
 import android.content.Context
 import android.graphics.Bitmap

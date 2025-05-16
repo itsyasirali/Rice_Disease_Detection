@@ -1,9 +1,9 @@
-package com.yasiraliraj.ricediseasedetection.ui.activity
+package com.itsyasirali.ricediseasedetection.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import com.yasiraliraj.ricediseasedetection.R
+import com.itsyasirali.ricediseasedetection.R
 
 class ActivitySettings : BaseActivity() {
 

@@ -1,4 +1,4 @@
-package com.yasiraliraj.ricediseasedetection.adapter
+package com.itsyasirali.ricediseasedetection.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.yasiraliraj.ricediseasedetection.R
-import com.yasiraliraj.ricediseasedetection.models.DiseaseModel
+import com.itsyasirali.ricediseasedetection.R
+import com.itsyasirali.ricediseasedetection.models.DiseaseModel
 
 class DiseaseAdapter(private val diseases: List<DiseaseModel>) :
     RecyclerView.Adapter<DiseaseAdapter.DiseaseViewHolder>() {

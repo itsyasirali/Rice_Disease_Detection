@@ -1,8 +1,8 @@
-package com.yasiraliraj.ricediseasedetection.ui.activity
+package com.itsyasirali.ricediseasedetection.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
-import com.yasiraliraj.ricediseasedetection.databinding.ActivityMainBinding
+import com.itsyasirali.ricediseasedetection.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity() {
 
