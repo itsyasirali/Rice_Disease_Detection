@@ -12,4 +12,15 @@
     <string name="btn_urdu">اردو</string>
 
     <string name="title_choose_languge">زبان کا انتخاب کریں۔</string>
+
+    <string name="title_login" translatable="false">لاگ اِن</string>
+    <string name="title_signup" translatable="false">سائن اپ</string>
+    <string name="title_forgot_password" translatable="false">پاس ورڈ بھول گئے؟</string>
+    <string name="title_reset_password" translatable="false">پاس ورڈ ری سیٹ کریں</string>
+    <string name="title_logout" translatable="false">لاگ آؤٹ</string>
+    <string name="title_dont_have_account" translatable="false">کیا آپ کا اکاؤنٹ نہیں ہے؟</string>
+
+    <string name="title_email" translatable="false">ای میل</string>
+    <string name="title_password" translatable="false">پاس ورڈ</string>
+    <string name="title_name" translatable="false">نام</string>
 </resources>

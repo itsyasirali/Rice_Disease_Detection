@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:hint="Email">
+        android:hint="@string/title_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEmail"
@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:hint="Password">
+        android:hint="@string/title_password">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPassword"
@@ -44,12 +44,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimary"
-        android:text="Login"
+        android:text="@string/title_login"
         android:textColor="#FFFFFF"
         android:layout_marginBottom="12dp"/>
 
     <TextView
-        android:text="Don't have an account?"
+        android:text="@string/title_dont_have_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"/>
@@ -58,7 +58,7 @@
         android:id="@+id/btnSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
+        android:text="@string/title_signup"
         android:textAllCaps="false"
         android:layout_marginTop="8dp"
         android:backgroundTint="#E0E0E0"/>

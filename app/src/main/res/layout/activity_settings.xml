@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
-    android:background="@color/colorBackground">
-
-    <TextView
+    tools:context=".ui.activity.ActivitySettings">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLanguage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_choose_languge"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorTextPrimary"
-        android:layout_marginBottom="16dp" />
+        android:layout_margin="15sp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_choose_languge"
+            android:layout_margin="15sp"
+            />
+    </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/btnEnglish"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLogout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_english" />
+        android:layout_margin="15sp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_logout"
+            android:layout_margin="15sp"
+            />
+    </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/btnUrdu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_urdu"
-        android:layout_marginTop="12dp" />
+
 </LinearLayout>

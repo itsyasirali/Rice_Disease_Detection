@@ -18,12 +18,12 @@ class ImageClassifier(private val context: Context) {
     private val modelInputSize = 4 * inputImageWidth * inputImageHeight * 3
 
     init {
-        interpreter = Interpreter(loadModelFile("model.tflite"))
-        labels = loadLabels("labels.txt")
+        interpreter = Interpreter(loadModelFile())
+        labels = loadLabels()
     }
 
-    private fun loadModelFile(modelPath: String): MappedByteBuffer {
-        val fileDescriptor = context.assets.openFd(modelPath)
+    private fun loadModelFile(): MappedByteBuffer {
+        val fileDescriptor = context.assets.openFd(Constants.MODEl_PATH)
         val inputStream = FileInputStream(fileDescriptor.fileDescriptor)
         val fileChannel = inputStream.channel
         val startOffset = fileDescriptor.startOffset
@@ -31,8 +31,8 @@ class ImageClassifier(private val context: Context) {
         return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength)
     }
 
-    private fun loadLabels(labelPath: String): List<String> {
-        return context.assets.open(labelPath).bufferedReader().useLines { it.toList() }
+    private fun loadLabels(): List<String> {
+        return context.assets.open(Constants.LABEL).bufferedReader().useLines { it.toList() }
     }
 
     fun classifyImage(bitmap: Bitmap): String {

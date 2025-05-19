@@ -13,10 +13,10 @@
         android:theme="@style/Theme.RiceDiseaseDetection"
         tools:targetApi="31">
         <activity
-            android:name=".ui.activity.ActivitySignup"
+            android:name=".ActivityLanguage"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.ActivityLogin"
+            android:name=".ui.activity.ActivitySplash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +24,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.activity.ActivitySignup"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ActivityLogin"
+            android:exported="true"></activity>
         <activity
             android:name=".ui.activity.ActivitySettings"
             android:exported="false" />
@@ -42,9 +48,7 @@
         <activity
             android:name=".ui.activity.MainActivity"
             android:configChanges="locale|layoutDirection"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
