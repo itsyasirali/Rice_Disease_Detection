@@ -33,7 +33,7 @@ class UserViewModel : ViewModel() {
         )
     }
 
-    fun fetchAllUsers() {
+    fun     fetchAllUsers() {
         repo.getAllUsers(
             onSuccess = { users -> _allUsers.postValue(users) },
             onFailure = { exception -> _error.postValue(exception.message) }

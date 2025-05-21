@@ -17,38 +17,44 @@ class ActivityCommonDiseases : BaseActivity() {
 
         val diseaseList = listOf(
             DiseaseModel(
-                "bacterial_leaf_blight",
-                "Caused by Xanthomonas oryzae, leads to yellowing and wilting of leaves."
+                name = "bacterial_leaf_blight",
+                description = "Caused by Xanthomonas oryzae, leads to yellowing and wilting of leaves."
             ),
             DiseaseModel(
-                "bacterial_leaf_streak",
-                "Thin translucent streaks on the leaves, later turning yellow."
+                name = "bacterial_leaf_streak",
+                description = "Thin translucent streaks on the leaves, later turning yellow."
             ),
             DiseaseModel(
-                "bacterial_panicle_blight",
-                "Affects panicle development, leading to unfilled grains."
+                name = "bacterial_panicle_blight",
+                description = "Affects panicle development, leading to unfilled grains."
             ),
             DiseaseModel(
-                "blast",
-                "Fungal disease causing lesions on leaves, collars, and panicles."
+                name = "blast",
+                description = "Fungal disease causing lesions on leaves, collars, and panicles."
             ),
             DiseaseModel(
-                "brown_spot",
-                "Brown circular spots with yellow halo, reduces photosynthesis."
-            ),
-            DiseaseModel("dead_heart", "Central tiller dies off due to stem borer larvae."),
-            DiseaseModel(
-                "downy_mildew",
-                "Whitish fungal growth on leaves with stunted plant growth."
+                name = "brown_spot",
+                description = "Brown circular spots with yellow halo, reduces photosynthesis."
             ),
             DiseaseModel(
-                "hispa",
-                "Blue-black beetle causing white streaks due to scraping leaf surface."
+                name = "dead_heart",
+                description = "Central tiller dies off due to stem borer larvae."
             ),
-            DiseaseModel("normal", "Healthy rice plant with no visible signs of infection."),
             DiseaseModel(
-                "tungro",
-                "Viral disease transmitted by leafhoppers, results in stunted and yellow-orange plants."
+                name = "downy_mildew",
+                description = "Whitish fungal growth on leaves with stunted plant growth."
+            ),
+            DiseaseModel(
+                name = "hispa",
+                description = "Blue-black beetle causing white streaks due to scraping leaf surface."
+            ),
+            DiseaseModel(
+                name = "normal",
+                description = "Healthy rice plant with no visible signs of infection."
+            ),
+            DiseaseModel(
+                name = "tungro",
+                description = "Viral disease transmitted by leafhoppers, results in stunted and yellow-orange plants."
             )
         )
 

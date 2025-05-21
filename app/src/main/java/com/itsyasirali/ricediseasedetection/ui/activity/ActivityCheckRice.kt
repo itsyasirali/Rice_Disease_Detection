@@ -11,8 +11,14 @@ import android.provider.MediaStore
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.activity.viewModels
 import com.itsyasirali.ricediseasedetection.R
+import com.itsyasirali.ricediseasedetection.models.DiseaseModel
 import com.itsyasirali.ricediseasedetection.util.ImageClassifier
+import com.itsyasirali.ricediseasedetection.util.SharedPrefManager
+import com.itsyasirali.ricediseasedetection.viewmodel.DiseaseViewModel
+import com.itsyasirali.ricediseasedetection.viewmodel.UserViewModel
 
 class ActivityCheckRice : BaseActivity() {
     private lateinit var imageClassifier: ImageClassifier
@@ -20,9 +26,14 @@ class ActivityCheckRice : BaseActivity() {
     private lateinit var resultTextView: TextView
     private val SELECT_IMAGE_REQUEST = 1
 
+    private val diseaseViewModel: DiseaseViewModel by viewModels()
+    private lateinit var sharedPrefManager: SharedPrefManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_check_rice)
+
+        sharedPrefManager = SharedPrefManager(this)
 
         imageClassifier = ImageClassifier(this)
         imageView = findViewById(R.id.imageView)
@@ -33,6 +44,14 @@ class ActivityCheckRice : BaseActivity() {
             val intent = Intent(Intent.ACTION_GET_CONTENT)
             intent.type = "image/*"
             startActivityForResult(intent, SELECT_IMAGE_REQUEST)
+        }
+
+        diseaseViewModel.saveStatus.observe(this) { status ->
+            Toast.makeText(this, status, Toast.LENGTH_SHORT).show()
+        }
+
+        diseaseViewModel.error.observe(this) { error ->
+            Toast.makeText(this, "Error: $error", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -45,6 +64,12 @@ class ActivityCheckRice : BaseActivity() {
                 imageView.setImageBitmap(bitmap)
                 val result = imageClassifier.classifyImage(bitmap)
                 resultTextView.text = result
+
+                val diseases = DiseaseModel(
+                    userId = sharedPrefManager.getUser()!!.uid,
+                    name = result
+                )
+                diseaseViewModel.addDisease(diseases)
             }
         }
     }

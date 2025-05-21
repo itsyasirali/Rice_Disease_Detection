@@ -4,6 +4,7 @@ object Constants {
 
     //////////////db//////////////
     val USER_COLLECTION = "users"
+    val DISEASE_COLLECTION = "diseases"
 
     ////////////model/////////////
     val MODEl_PATH = "model.tflite"
