@@ -7,6 +7,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.activity.ActivitySettings">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:text="@string/title_settings"
+        android:textSize="24dp" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cvLanguage"
         android:layout_width="match_parent"
