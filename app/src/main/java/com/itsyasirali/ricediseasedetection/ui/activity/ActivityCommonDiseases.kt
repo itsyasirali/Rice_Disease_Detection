@@ -2,6 +2,7 @@ package com.itsyasirali.ricediseasedetection.ui.activity
 
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.itsyasirali.ricediseasedetection.R
 import com.itsyasirali.ricediseasedetection.adapter.DiseaseAdapter
 import com.itsyasirali.ricediseasedetection.databinding.ActivityCommonDiseasesBinding
 import com.itsyasirali.ricediseasedetection.models.DiseaseModel
@@ -17,48 +18,50 @@ class ActivityCommonDiseases : BaseActivity() {
 
         val diseaseList = listOf(
             DiseaseModel(
-                name = "bacterial_leaf_blight",
-                description = "Caused by Xanthomonas oryzae, leads to yellowing and wilting of leaves."
+                name = getString(R.string.disease_bacterial_leaf_blight),
+                description = getString(R.string.desc_bacterial_leaf_blight)
             ),
             DiseaseModel(
-                name = "bacterial_leaf_streak",
-                description = "Thin translucent streaks on the leaves, later turning yellow."
+                name = getString(R.string.disease_bacterial_leaf_streak),
+                description = getString(R.string.desc_bacterial_leaf_streak)
             ),
             DiseaseModel(
-                name = "bacterial_panicle_blight",
-                description = "Affects panicle development, leading to unfilled grains."
+                name = getString(R.string.disease_bacterial_panicle_blight),
+                description = getString(R.string.desc_bacterial_panicle_blight)
             ),
             DiseaseModel(
-                name = "blast",
-                description = "Fungal disease causing lesions on leaves, collars, and panicles."
+                name = getString(R.string.disease_blast),
+                description = getString(R.string.desc_blast)
             ),
             DiseaseModel(
-                name = "brown_spot",
-                description = "Brown circular spots with yellow halo, reduces photosynthesis."
+                name = getString(R.string.disease_brown_spot),
+                description = getString(R.string.desc_brown_spot)
             ),
             DiseaseModel(
-                name = "dead_heart",
-                description = "Central tiller dies off due to stem borer larvae."
+                name = getString(R.string.disease_dead_heart),
+                description = getString(R.string.desc_dead_heart)
             ),
             DiseaseModel(
-                name = "downy_mildew",
-                description = "Whitish fungal growth on leaves with stunted plant growth."
+                name = getString(R.string.disease_downy_mildew),
+                description = getString(R.string.desc_downy_mildew)
             ),
             DiseaseModel(
-                name = "hispa",
-                description = "Blue-black beetle causing white streaks due to scraping leaf surface."
+                name = getString(R.string.disease_hispa),
+                description = getString(R.string.desc_hispa)
             ),
             DiseaseModel(
-                name = "normal",
-                description = "Healthy rice plant with no visible signs of infection."
+                name = getString(R.string.disease_normal),
+                description = getString(R.string.desc_normal)
             ),
             DiseaseModel(
-                name = "tungro",
-                description = "Viral disease transmitted by leafhoppers, results in stunted and yellow-orange plants."
+                name = getString(R.string.disease_tungro),
+                description = getString(R.string.desc_tungro)
             )
         )
 
         binding.recyclerDiseases.layoutManager = LinearLayoutManager(this)
         binding.recyclerDiseases.adapter = DiseaseAdapter(diseaseList)
+
+        binding.btnBack.setOnClickListener { super.onBackPressed() }
     }
 }

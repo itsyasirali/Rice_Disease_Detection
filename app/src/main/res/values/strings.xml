@@ -24,4 +24,36 @@
     <string name="title_password" translatable="false">Password</string>
     <string name="title_name" translatable="false">Name</string>
 
+
+    <string name="disease_bacterial_leaf_blight">Bacterial Leaf Blight</string>
+    <string name="desc_bacterial_leaf_blight">Caused by Xanthomonas oryzae, leads to yellowing and wilting of leaves.</string>
+
+    <string name="disease_bacterial_leaf_streak">Bacterial Leaf Streak</string>
+    <string name="desc_bacterial_leaf_streak">Thin translucent streaks on the leaves, later turning yellow.</string>
+
+    <string name="disease_bacterial_panicle_blight">Bacterial Panicle Blight</string>
+    <string name="desc_bacterial_panicle_blight">Affects panicle development, leading to unfilled grains.</string>
+
+    <string name="disease_blast">Blast</string>
+    <string name="desc_blast">Fungal disease causing lesions on leaves, collars, and panicles.</string>
+
+    <string name="disease_brown_spot">Brown Spot</string>
+    <string name="desc_brown_spot">Brown circular spots with yellow halo, reduces photosynthesis.</string>
+
+    <string name="disease_dead_heart">Dead Heart</string>
+    <string name="desc_dead_heart">Central tiller dies off due to stem borer larvae.</string>
+
+    <string name="disease_downy_mildew">Downy Mildew</string>
+    <string name="desc_downy_mildew">Whitish fungal growth on leaves with stunted plant growth.</string>
+
+    <string name="disease_hispa">Hispa</string>
+    <string name="desc_hispa">Blue-black beetle causing white streaks due to scraping leaf surface.</string>
+
+    <string name="disease_normal">Normal</string>
+    <string name="desc_normal">Healthy rice plant with no visible signs of infection.</string>
+
+    <string name="disease_tungro">Tungro</string>
+    <string name="desc_tungro">Viral disease transmitted by leafhoppers, results in stunted and yellow-orange plants.</string>
+
+
 </resources>

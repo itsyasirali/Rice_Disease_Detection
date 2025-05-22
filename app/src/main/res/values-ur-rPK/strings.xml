@@ -23,4 +23,36 @@
     <string name="title_email" translatable="false">ای میل</string>
     <string name="title_password" translatable="false">پاس ورڈ</string>
     <string name="title_name" translatable="false">نام</string>
+
+
+    <string name="disease_bacterial_leaf_blight">بیکٹیریائی پتہ جھلسنا</string>
+    <string name="desc_bacterial_leaf_blight">Xanthomonas oryzae کی وجہ سے، پتوں کا پیلا ہونا اور مرجھانا۔</string>
+
+    <string name="disease_bacterial_leaf_streak">بیکٹیریائی پتہ لکیریں</string>
+    <string name="desc_bacterial_leaf_streak">پتوں پر شفاف لکیریں جو بعد میں پیلی ہو جاتی ہیں۔</string>
+
+    <string name="disease_bacterial_panicle_blight">بیکٹیریائی خوشہ جھلسنا</string>
+    <string name="desc_bacterial_panicle_blight">خوشے کی نشوونما کو متاثر کرتا ہے، جس سے دانے خالی رہ جاتے ہیں۔</string>
+
+    <string name="disease_blast">بلاسٹ</string>
+    <string name="desc_blast">فنگس کی بیماری جو پتوں، کالروں اور خوشوں پر دھبے ڈالتی ہے۔</string>
+
+    <string name="disease_brown_spot">بھورا دھبہ</string>
+    <string name="desc_brown_spot">پیلی ہالہ کے ساتھ بھورے دائرے، جو ضیائی تالیف کو کم کرتے ہیں۔</string>
+
+    <string name="disease_dead_heart">مردہ دل</string>
+    <string name="desc_dead_heart">مرکزی ٹلر تنے کے کیڑے کے لاروا کی وجہ سے مر جاتا ہے۔</string>
+
+    <string name="disease_downy_mildew">ڈاؤنی پھپھوندی</string>
+    <string name="desc_downy_mildew">پتوں پر سفید فنگس کی نشوونما اور پودے کی نشوونما میں کمی۔</string>
+
+    <string name="disease_hispa">ہسپا</string>
+    <string name="desc_hispa">نیلا سیاہ بیٹل جو پتوں کی سطح کو کھُرچ کر سفید لکیریں بناتا ہے۔</string>
+
+    <string name="disease_normal">نارمل</string>
+    <string name="desc_normal">صحت مند چاول کا پودا جس پر کسی بیماری کے آثار نہیں۔</string>
+
+    <string name="disease_tungro">ٹنگرو</string>
+    <string name="desc_tungro">پتوں کے کیڑے سے پھیلنے والی وائرس کی بیماری، پودا چھوٹا اور نارنجی زرد ہوتا ہے۔</string>
+
 </resources>

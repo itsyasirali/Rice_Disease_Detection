@@ -14,6 +14,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.viewModels
 import com.itsyasirali.ricediseasedetection.R
+import com.itsyasirali.ricediseasedetection.databinding.ActivityCheckRiceBinding
 import com.itsyasirali.ricediseasedetection.models.DiseaseModel
 import com.itsyasirali.ricediseasedetection.util.ImageClassifier
 import com.itsyasirali.ricediseasedetection.util.SharedPrefManager
@@ -29,9 +30,11 @@ class ActivityCheckRice : BaseActivity() {
     private val diseaseViewModel: DiseaseViewModel by viewModels()
     private lateinit var sharedPrefManager: SharedPrefManager
 
+    private lateinit var binding: ActivityCheckRiceBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_check_rice)
+        binding = ActivityCheckRiceBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         sharedPrefManager = SharedPrefManager(this)
 
@@ -53,6 +56,8 @@ class ActivityCheckRice : BaseActivity() {
         diseaseViewModel.error.observe(this) { error ->
             Toast.makeText(this, "Error: $error", Toast.LENGTH_SHORT).show()
         }
+
+        binding.btnBack.setOnClickListener { super.onBackPressed() }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

@@ -3,7 +3,6 @@ package com.itsyasirali.ricediseasedetection.ui.activity
 import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
-import com.itsyasirali.ricediseasedetection.ActivityLanguage
 import com.itsyasirali.ricediseasedetection.databinding.ActivitySettingsBinding
 import com.itsyasirali.ricediseasedetection.util.SharedPrefManager
 
@@ -22,6 +21,7 @@ class ActivitySettings : BaseActivity() {
             cvLogout.setOnClickListener {
                 showLogoutConfirmationDialog()
             }
+            btnBack.setOnClickListener { super.onBackPressed() }
         }
 
     }

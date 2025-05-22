@@ -7,25 +7,47 @@
     android:padding="24dp"
     android:background="@color/colorBackground">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_choose_languge"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorTextPrimary"
-        android:layout_marginBottom="16dp" />
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        >
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:id="@+id/btnBack"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title_choose_languge"
+            android:textSize="24dp" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/btnEnglish"
+    <RadioGroup
+        android:id="@+id/langRadioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_english" />
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
 
-    <Button
-        android:id="@+id/btnUrdu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_urdu"
-        android:layout_marginTop="12dp" />
+        <RadioButton
+            android:id="@+id/radioEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_english" />
+
+        <RadioButton
+            android:id="@+id/radioUrdu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_urdu"
+            android:layout_marginTop="12dp" />
+    </RadioGroup>
+
 </LinearLayout>

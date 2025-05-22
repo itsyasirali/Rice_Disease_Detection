@@ -3,27 +3,21 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Primary Brand Colors -->
-    <color name="colorPrimary">#4CAF50</color> <!-- Green -->
-    <color name="colorPrimaryDark">#388E3C</color>
-    <color name="colorAccent">#FFB300</color> <!-- Amber -->
+    <color name="colorPrimary">#B3D8A8</color>
+    <color name="colorPrimaryDark">#3D8D7A</color>
+    <color name="colorAccent">#A3D1C6</color>
 
-    <!-- Backgrounds & Surfaces -->
-    <color name="colorBackground">#FAFAFA</color>
+    <color name="colorBackground">#FBFFE4</color>
     <color name="colorSurface">#FFFFFF</color>
     <color name="colorDivider">#E0E0E0</color>
 
-    <!-- Text Colors -->
     <color name="colorTextPrimary">#212121</color>
     <color name="colorTextSecondary">#757575</color>
 
-    <!-- Card Elevation Shadow -->
     <color name="colorCardShadow">#33000000</color>
 
-    <!-- Icon Tint -->
     <color name="colorIcon">#616161</color>
 
-    <!-- States -->
     <color name="colorSuccess">#2E7D32</color>
     <color name="colorWarning">#FBC02D</color>
     <color name="colorError">#D32F2F</color>
